@@ -5,7 +5,3 @@ variable "vpc_id" {
 variable "frontend_subnet_id" {
   type = string
 }
-
-variable "backend_subnet_id" {
-  type = string
-}

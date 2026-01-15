@@ -11,17 +11,7 @@ resource "aws_route_table" "public" {
   }
 }
 
-resource "aws_route_table" "private" {
-  vpc_id = var.vpc_id
-}
-
 resource "aws_route_table_association" "public" {
   subnet_id      = var.frontend_subnet_id
   route_table_id = aws_route_table.public.id
 }
-
-resource "aws_route_table_association" "private" {
-  subnet_id      = var.backend_subnet_id
-  route_table_id = aws_route_table.private.id
-}
-
