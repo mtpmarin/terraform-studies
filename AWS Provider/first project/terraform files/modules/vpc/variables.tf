@@ -1,8 +1,8 @@
 variable "cidr_block" {
-  type        = string
+  type = string
 }
 
 variable "name" {
-    type = string
+  type = string
 }
 
